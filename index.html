@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bingo E3</title>
+
+    <style>
+        h1{
+            text-transform: capitalize;
+            font-family: sans-serif;
+            text-align: center;
+            font-size: 300%;
+        }
+
+        table{
+            margin: auto;
+        }
+
+        td{
+            border: solid black 1px;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        td.clicked{
+            background-color: green;
+        }
+
+        .freespace{
+            font-weight: bold;
+            color: white;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<h1>Nintendo Direct E3 2018 Bingo</h1>
+    <table>
+        <tbody>
+        <tr>
+            <td>Smash 5 roster in tournament</td>
+            <td>No Metroid Prime 4</td>
+            <td>Fire Emblem has two versions</td>
+            <td>Splatoon 2 update</td>
+            <td>Reggie doing a comic skit</td>
+        </tr>
+        <tr>
+            <td>Online is great</td>
+            <td>Miiverse is back</td>
+            <td>Virtual Console is subscription based</td>
+            <td>No Xenoblade whatsoever</td>
+            <td>Trying to hype for tournament</td>
+        </tr>
+        <tr>
+            <td>"The game is fun"</td>
+            <td>Yet another Wii U port</td>
+            <td class="freespace">FREE SPACE</td>
+            <td>Fortnite available now</td>
+            <td>Ports of game from PS360 era</td>
+        </tr>
+        <tr>
+            <td>Animal Crossing in development</td>
+            <td>F Zero is not a racing game</td>
+            <td>Spyro is coming on switch</td>
+            <td>Nintendo stuff in a third party game</td>
+            <td>Miis in a game</td>
+        </tr>
+        <tr>
+            <td>Dev interview about inspiration for Yoshi</td>
+            <td>Star Fox Game for 2019</td>
+            <td>Spring Man in Smash</td>
+            <td>"Directly to you"</td>
+            <td>3DS is (not) dead</td>
+        </tr>
+        </tbody>
+    </table>
+
+<script>
+    [].map.call(document.querySelectorAll("td"), function(td){
+        td.addEventListener("click", function(){
+            td.classList.toggle("clicked");
+        })
+    });
+</script>
+</body>
+</html>
