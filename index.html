@@ -5,11 +5,27 @@
     <title>Bingo E3</title>
 
     <style>
+        body{
+            background: url("background.jpg") center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content{
+            background: RGBA(255,255,255,.25);
+            width: 800px;
+            margin: 0 auto;
+        }
+
         h1{
             text-transform: capitalize;
             font-family: sans-serif;
             text-align: center;
             font-size: 300%;
+            background: url("header.jpg") no-repeat center;
+            height: 200px;
+            color: transparent;
+            margin: 0;
         }
 
         table{
@@ -17,7 +33,6 @@
         }
 
         td{
-            border: solid black 1px;
             height: 150px;
             width: 150px;
             text-align: center;
@@ -29,10 +44,13 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            background: RGBA(255,255,255,.7);
         }
 
         td.clicked{
             background-color: green;
+            color: white;
+            opacity: .25;
         }
 
         .freespace{
@@ -43,7 +61,8 @@
     </style>
 </head>
 <body>
-<h1>Nintendo Direct E3 2018 Bingo</h1>
+<div class="content">
+    <h1>Nintendo Direct E3 2018 Bingo</h1>
     <table>
         <tbody>
         <tr>
@@ -83,6 +102,8 @@
         </tr>
         </tbody>
     </table>
+
+</div>
 
 <script>
     [].map.call(document.querySelectorAll("td"), function(td){
